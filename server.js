@@ -1,7 +1,6 @@
 import express from "express";
-import fetch from "node-fetch";
 import Router from "./routers/router.js";
-globalThis.fetch = fetch
+
 const app = express();
 
 app.use(express.json());

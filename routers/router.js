@@ -1,5 +1,3 @@
-// import Authenticator from "openai-authenticator";
-// const authenticator = new Authenticator();
 import express from "express";
 import { ChatGPTAuthTokenService } from "chat-gpt-authenticator";
 import fetchData from "../fetchData.js";
