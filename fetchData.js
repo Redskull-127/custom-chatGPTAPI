@@ -1,4 +1,4 @@
-import fetch from "node-fetch";
+import fetch, { Headers } from "node-fetch";
 
 export default function fetchData(req, res, token) {
   var content =
@@ -20,10 +20,10 @@ export default function fetchData(req, res, token) {
 
   fetch("https://api.openai.com/v1/chat/completions", {
     method: "POST",
-    headers: {
+    headers: new Headers({
       Authorization: `Bearer ${token}`,
       "Content-Type": "application/json",
-    },
+    }),
     body: JSON.stringify({
       model: "gpt-3.5-turbo",
       messages: [
