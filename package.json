@@ -15,6 +15,7 @@
     "chatgpt": "^5.0.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "fetch-cookie": "^2.1.0",
     "node-fetch": "^3.3.0",
     "openai-authenticator": "^0.0.3"
   }
