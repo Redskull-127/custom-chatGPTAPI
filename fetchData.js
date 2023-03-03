@@ -1,3 +1,5 @@
+import fetch from "node-fetch";
+
 export default function fetchData(req, res, token) {
   var content =
     req.body.content || res.status(500).json({ error: "Content is required" });
