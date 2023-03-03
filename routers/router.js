@@ -21,11 +21,10 @@ router.get("/", async (req, res) => {
     const token =
       (await chatGptAuthTokenService.getToken()) ||
       res.json({ error: "Invalid email or password" });
-      console.log(token);
     fetchData(req, res, token);
   } catch (err) {
     console.log(err);
-    res.status(500).json({ error: err });
+    res.status(500).json({ error: err.message });
   }
 });
 

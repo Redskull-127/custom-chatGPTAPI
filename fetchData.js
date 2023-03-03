@@ -12,7 +12,7 @@ export default function fetchData(req, res, token) {
     model: "gpt-3.5-turbo",
     messages: [
       {
-        role: "client",
+        role: "user",
         content: content,
       },
     ],
@@ -24,15 +24,12 @@ export default function fetchData(req, res, token) {
     body: raw,
     redirect: "follow",
   };
-  console.log(req.params.id);
   fetch("https://api.openai.com/v1/chat/completions", requestOptions)
     .then((response) => response.text())
     .then((result) => {
-      console.log(result);
       res.status(200).json({ result: result });
     })
     .catch((error) => {
-      console.log("error", error);
-      res.status(500).json({ error: error });
+      res.status(500).json({ error: error.message });
     });
 }
