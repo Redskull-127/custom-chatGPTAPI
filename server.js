@@ -7,14 +7,12 @@ app.use(express.json());
 app.use("/", Router);
 
 app.get("/test", (req, res) => {
-  try{
-     res.status(200).json({message: "Healthy"})
-  } catch(err) {
-     res.status(500).json({message: err.message})
+  try {
+    res.status(200).json({ message: "Healthy" });
+  } catch (err) {
+    res.status(500).json({ message: err.message });
   }
-
-
-)
+});
 
 const port = 8080;
 app.listen(port, (err) => {
