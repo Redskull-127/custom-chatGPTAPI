@@ -4,7 +4,7 @@ import fetchData from "../fetchData.js";
 
 const router = express.Router();
 
-router.get("/", async (req, res) => {
+router.post("/", async (req, res) => {
   try {
     const email =
       (await req.body.email) ||
