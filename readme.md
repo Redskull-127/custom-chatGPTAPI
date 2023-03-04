@@ -5,7 +5,11 @@
 All you need to do is pass some credentials with your question to:
 
 ```
-https://meer-chatgpt.onrender.com/  
+https://chat.meertarbani.co/  
+```
+
+```
+To test server send ```GET``` request to ```https://chat.meertarbani.co/test``` !
 ```
 
 # Required Body
