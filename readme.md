@@ -9,7 +9,7 @@ https://chat.meertarbani.co/
 ```
 
 ```
-To test server send ```GET``` request to ```https://chat.meertarbani.co/test``` !
+To test server send GET request to https://chat.meertarbani.co/test !
 ```
 
 # Required Body
