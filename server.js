@@ -1,7 +1,12 @@
 import express from "express";
 import Router from "./routers/router.js";
+import cors from "cors";
 
 const app = express();
+app.use(cors({
+  origin: 'http://localhost:3000',
+  methods: ['GET', 'POST', 'PUT']
+}))
 
 app.use(express.json());
 app.use("/", Router);
