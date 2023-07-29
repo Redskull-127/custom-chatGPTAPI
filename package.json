@@ -19,6 +19,7 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "fetch-cookie": "^2.1.0",
-    "node-fetch": "^3.3.0"
+    "node-fetch": "^3.3.0",
+    "openai-token": "^1.0.0"
   }
 }
